@@ -10,9 +10,7 @@ class ThemeController extends GetxController {
       currentTheme.value = ThemeMode.light;
     }
   }
-  // Method to listen to system theme changes
   void updateSystemTheme() {
-    // Check if the system is in dark mode or light mode
     currentTheme.value = WidgetsBinding.instance.window.platformBrightness == Brightness.dark
         ? ThemeMode.dark
         : ThemeMode.light;
