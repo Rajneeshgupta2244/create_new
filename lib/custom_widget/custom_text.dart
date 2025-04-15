@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 class CommonText extends StatelessWidget {
@@ -25,6 +25,7 @@ class CommonText extends StatelessWidget {
       maxLines: maxLines,
       overflow: overflowEnabled ? TextOverflow.ellipsis : TextOverflow.visible,
       textAlign: textAlign,
+
     );
   }
 }

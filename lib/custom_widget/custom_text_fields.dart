@@ -1,3 +1,4 @@
+import 'package:dummy/helper/common_text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
@@ -43,11 +44,10 @@ class _CustomTextFieldState extends State<CustomTextField> {
             : [],
         cursorColor: AppColors.primary,
         cursorHeight: 17,
-        style: customTextStyle(
+        style: CommonTextStyle.customTextStyle(
           fontSize: 16,
           color: AppColors.primary,
           fontWeight: FontWeight.w400,
-          fontFamily: AppConstants.gilroyRegular,
         ),
         autovalidateMode: AutovalidateMode.onUserInteraction,
         onChanged: (value) {
@@ -80,11 +80,10 @@ class _CustomTextFieldState extends State<CustomTextField> {
           fillColor: AppColors.primary,
           counterText: '',
           hintText: widget.hintText,
-          hintStyle: customTextStyle(
+          hintStyle: CommonTextStyle.customTextStyle(
             fontSize: 16,
             color: AppColors.primary,
             fontWeight: FontWeight.w400,
-            fontFamily: AppConstants.gilroyRegular,
           ),
           // contentPadding: const EdgeInsets.symmetric(vertical: 0),
           focusedErrorBorder: OutlineInputBorder(

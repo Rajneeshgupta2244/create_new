@@ -1,4 +1,3 @@
-import 'package:dummy/Helper/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -7,14 +6,18 @@ import 'package:flutter_localizations/flutter_localizations.dart'; // Import for
 import 'helper/app_focus_manager.dart';
 import 'helper/app_language_translations.dart';
 import 'helper/app_theme/app_theme.dart';
+import 'helper/app_theme/dark_light_mode.dart';
+import 'helper/common_thing.dart';
 import 'helper/constants.dart';
 import 'routes/all_pages.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  checkInternetConnection();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then((
     _,
   ) {
+
     runApp(GlobalFocusManager(child: MyApp()));
   });
 }
@@ -37,19 +40,8 @@ class MyApp extends StatelessWidget {
             getPages: AllPages.getPages(),
             initialRoute: AllPages.initialRoute,
             themeMode: themeController.currentTheme.value,
-            theme: ThemeData(
-              colorScheme: ColorScheme.fromSeed(
-                seedColor: AppColors.white,
-                primary: AppColors.primary,
-              ),
-              primaryColor: AppColors.primary,
-              appBarTheme: AppBarTheme(backgroundColor: AppColors.primary),
-            ),
-            darkTheme: ThemeData.dark().copyWith(
-              primaryColor: Colors.blueGrey,
-              appBarTheme: AppBarTheme(backgroundColor: Colors.blueGrey),
-              colorScheme: ColorScheme.dark(primary: Colors.blueGrey),
-            ),
+            theme: AppTheme.lightTheme,
+            darkTheme: AppTheme.darkTheme,
             translations: AppTranslations(),
             locale: Locale('en', 'US'),
             fallbackLocale: Locale('en', 'US'),

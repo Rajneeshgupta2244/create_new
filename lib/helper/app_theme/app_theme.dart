@@ -16,3 +16,4 @@ class ThemeController extends GetxController {
         : ThemeMode.light;
   }
 }
+
