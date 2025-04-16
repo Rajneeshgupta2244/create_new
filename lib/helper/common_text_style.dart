@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class CommonTextStyle {
@@ -21,11 +19,11 @@ class CommonTextStyle {
   }) {
     return TextStyle(
       fontFamily: fontFirst,
-      fontSize: fontSize ?? 14.0,
+      fontSize: fontSize ?? null,
       fontWeight: fontWeight ?? FontWeight.normal,
-      color: color ?? const Color(0xFF000000),
+      color: color ?? null,
       letterSpacing: letterSpacing ?? 0.0,
-      height: height ?? 1.2,
+      height: height ?? null,
       decoration: underline ? TextDecoration.underline : TextDecoration.none,
     );
   }

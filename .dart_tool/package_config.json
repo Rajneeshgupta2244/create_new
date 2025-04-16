@@ -374,6 +374,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "pretty_dio_logger",
+      "rootUri": "file:///Users/rajneesh/.pub-cache/hosted/pub.dev/pretty_dio_logger-1.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "shared_preferences",
       "rootUri": "file:///Users/rajneesh/.pub-cache/hosted/pub.dev/shared_preferences-2.5.2",
       "packageUri": "lib/",
@@ -524,7 +530,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-04-15T09:07:30.110048Z",
+  "generated": "2025-04-16T07:51:20.811479Z",
   "generator": "pub",
   "generatorVersion": "3.7.0",
   "flutterRoot": "file:///Users/rajneesh/fvm/versions/3.29.0",

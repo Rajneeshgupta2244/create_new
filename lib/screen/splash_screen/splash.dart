@@ -27,13 +27,13 @@ class SplashScreen extends StatelessWidget {
                         maxLines: 1,
                         overflowEnabled: true,
                         style: CommonTextStyle.customTextStyle(
-                          color:
-                              Theme.of(context).brightness == Brightness.dark
-                                  ? Colors.blue
-                                  : Colors.orange,
-                          fontSize: 10,
-                          fontWeight: FontWeight.w500,
-                          underline: false,
+                          // color:
+                          //     Theme.of(context).brightness == Brightness.dark
+                          //         ? Colors.blue
+                          //         : Colors.orange,
+                          // fontSize: 10,
+                          // fontWeight: FontWeight.w500,
+                          // underline: false,
                         ),
                         text: "greeting",
                       ),
@@ -43,9 +43,9 @@ class SplashScreen extends StatelessWidget {
                         maxLines: 1,
                         overflowEnabled: true,
                         style: CommonTextStyle.customTextStyle(
-                          fontSize: 10,
-                          fontWeight: FontWeight.w500,
-                          underline: false,
+                          // fontSize: 10,
+                          // fontWeight: FontWeight.w500,
+                          // underline: false,
                         ),
                         text: "hello",
                       ),

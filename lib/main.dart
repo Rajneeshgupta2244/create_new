@@ -10,7 +10,6 @@ import 'helper/app_theme/dark_light_mode.dart';
 import 'helper/common_thing.dart';
 import 'helper/constants.dart';
 import 'routes/all_pages.dart';
-
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   checkInternetConnection();
@@ -21,7 +20,6 @@ void main() {
     runApp(GlobalFocusManager(child: MyApp()));
   });
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

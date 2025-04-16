@@ -3,29 +3,30 @@ import 'package:flutter/material.dart';
 class AppTheme {
   static ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
-    primarySwatch: Colors.blue,
-    scaffoldBackgroundColor: Colors.white,
+    primarySwatch: Colors.orange,
+    scaffoldBackgroundColor: Colors.yellow,
     appBarTheme: AppBarTheme(
       color: Colors.red,
       elevation: 0,
       iconTheme: IconThemeData(color: Colors.white),
     ),
     textTheme: TextTheme(
-      bodyMedium: TextStyle(color: Colors.black),
+      bodyMedium: TextStyle(color: Colors.blueGrey),
+
     ),
   );
 
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
-    primarySwatch: Colors.deepPurple,
-    scaffoldBackgroundColor: Colors.black,
+    primarySwatch: Colors.teal,
+    scaffoldBackgroundColor: Colors.grey,
     appBarTheme: AppBarTheme(
-      color: Colors.deepPurple,
+      color: Colors.pink,
       elevation: 0,
       iconTheme: IconThemeData(color: Colors.white),
     ),
     textTheme: TextTheme(
-      bodyMedium: TextStyle(color: Colors.white),
+      bodyMedium: TextStyle(color: Colors.red),
     ),
   );
 }
